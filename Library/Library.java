@@ -42,7 +42,7 @@ public class Library {
 
 		ph.delPerson(id);
 	}
-	
+
 	public void DelPerson(String type) {
 
 		ph.delPerson(type);

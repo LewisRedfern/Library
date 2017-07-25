@@ -30,36 +30,36 @@ public abstract class Item {
 
 		this.title = title;
 	}
-	
+
 	public String getTitle() {
 		return this.title;
 	}
-	
+
 	public void setMaxRentTime(int maxRentTime) {
 
-		this.maxRentTime = maxRentTime;	
+		this.maxRentTime = maxRentTime;
 	}
-	
+
 	public int getMaxRentTime() {
 		return this.maxRentTime;
 	}
-	
+
 	public void setArea(int area) {
 
-		this.area = area;	
+		this.area = area;
 	}
-	
+
 	public int getArea() {
 		return this.area;
 	}
-	
+
 	public void setItemAvailable(boolean itemAvailable) {
 
-		this.itemAvailable = itemAvailable;	
+		this.itemAvailable = itemAvailable;
 	}
-	
-	public boolean getItemAvailable () {
-		
+
+	public boolean getItemAvailable() {
+
 		return this.itemAvailable;
 	}
 }

@@ -42,8 +42,9 @@ public class PersonHandler {
 			// if parameter equals either class types e.g Staff or Member and
 			// the hashmap value is equal to that class name then.......
 			if (type.equals("Staff") && entry.getValue() instanceof Staff) {
-				
-				//remove entry in peopleList by the key the value is assigned to.
+
+				// remove entry in peopleList by the key the value is assigned
+				// to.
 				peopleList.remove(entry.getKey());
 			}
 
