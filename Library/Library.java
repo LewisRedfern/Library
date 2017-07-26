@@ -28,8 +28,22 @@ public class Library {
 		AddItem(map, "Map of the world on Mercator's projection Tissue Paper", 10, 3001, true, "Planet Earth");
 		DelItem(map);
 		GetItem(0);
+		checkOutItem(0);
+		GetItem(0);
+		checkInItem(0);
+		GetItem(0);
 	}// end of run
 
+	public void checkOutItem (int id) {
+		
+		il.checkOutItem(id);
+	}
+	
+	public void checkInItem (int id) {
+		
+		il.checkInItem(id);
+	}
+	
 	public void AddItem(String type, String title, int maxRentTime, int area, boolean itemAvailable, String extra) {
 
 		if (type.equals(b)) {
