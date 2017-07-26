@@ -17,4 +17,10 @@ public class Map extends Item {
 	public String getLocation() {
 		return this.location;
 	}
+	
+	@Override
+	public String toString() {
+		
+		return super.getType() + " " + super.getTitle() + " " + super.getMaxRentTime() + " " + super.getArea() + " " + super.getItemAvailable() + " " + this.getLocation();
+	}
 }

@@ -18,4 +18,9 @@ public class Book extends Item {
 		return this.author;
 	}
 
+	@Override
+	public String toString() {
+		
+		return super.getType() + " " + super.getTitle() + " " + super.getMaxRentTime() + " " + super.getArea() + " " + super.getItemAvailable() + " " + this.getAuthor();
+	}
 }

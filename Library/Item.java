@@ -62,4 +62,10 @@ public abstract class Item {
 
 		return this.itemAvailable;
 	}
+	
+	@Override
+	public String toString() {
+		
+		return this.type + " " + this.title + " " + this.maxRentTime + " " + this.area + " " + this.itemAvailable;
+	}
 }
