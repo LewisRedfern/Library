@@ -12,7 +12,9 @@ public class PersonHandler {
 
 	public void AddPerson(Person p) {
 
-		peopleList.put(i++, p);
+		IDGen id = new IDGen();
+		int i = id.getPersonID();
+		peopleList.put(i, p);
 	}
 
 	public Person getPerson(int id) {

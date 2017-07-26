@@ -59,7 +59,9 @@ public class ItemLog {
 
 	public void addItem(Item item) {
 
-		itemList.put(i++, item);
+		IDGen id = new IDGen();
+		int i = id.getItemID();
+		itemList.put(i, item);
 	}
 
 	public Item getItem(int id) {
