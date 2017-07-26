@@ -8,6 +8,7 @@ public class Library {
 	private PersonHandler ph = new PersonHandler();
 
 	private ItemLog il = new ItemLog();
+	
 
 	private String s = "Staff";
 	private String m = "Member";
@@ -32,8 +33,20 @@ public class Library {
 		GetItem(0);
 		checkInItem(0);
 		GetItem(0);
+		write();
+		read();
+		
 	}// end of run
 
+	public void read () {
+		
+		il.readItems();
+	}
+	
+	public void write () {
+		il.writeItems();
+	}
+	
 	public void checkOutItem (int id) {
 		
 		il.checkOutItem(id);

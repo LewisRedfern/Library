@@ -22,4 +22,11 @@ public class Newspaper extends Item{
 		
 		return super.getType() + " " + super.getTitle() + " " + super.getMaxRentTime() + " " + super.getArea() + " " + super.getItemAvailable() + " " + this.getHeadline();
 	}
+	
+	@Override
+	public String serialise() {
+
+		return super.getType() + "," + super.getTitle() + "," + super.getMaxRentTime() + "," + super.getArea() + ","
+				+ super.getItemAvailable() + "," + this.getHeadline();
+	}
 }

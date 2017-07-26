@@ -68,4 +68,10 @@ public abstract class Item {
 		
 		return this.type + " " + this.title + " " + this.maxRentTime + " " + this.area + " " + this.itemAvailable;
 	}
+	
+	
+	public String serialise() {
+		
+		return this.type + "," + this.title + "," + this.maxRentTime + "," + this.area + "," + this.itemAvailable;
+	}
 }
